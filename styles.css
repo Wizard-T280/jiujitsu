@@ -60,4 +60,6 @@ button:hover {
   backdrop-filter: blur(10px); /* Stronger blur for better contrast */
 }
 
-
+.maonrails-schedule {
+  margin-top: 20px;
+}
