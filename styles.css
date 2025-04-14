@@ -50,13 +50,13 @@ button:hover {
 }
 
 .maonrails-schedule {
-  background-color: rgba(200, 200, 200, 0.9); /* Stronger opacity */
+  background-color: rgba(255, 255, 255, 0.9); /* Stronger opacity */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
   border: 2px solid #ccc; /* Light gray border */
-  color: #333; /* Dark gray text */
+  color: #000; /* Dark gray text */
   margin: 20px auto; /* Center horizontally */
-  max-width: 600px; /* Restrict width */
+  max-width: 900px; /* Restrict width */
 }
 
