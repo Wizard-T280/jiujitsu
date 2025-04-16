@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jiu Jitsu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Fight Club</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://gymdesk.com/js/widgets.js"></script>
 </head>
+<body class="bg-black text-white">
+  <!-- Header / Hero -->
+  <header class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?mma,gym');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center">
+      <h1 class="text-5xl md:text-6xl mb-4">TRAIN HARD. FIGHT SMART.</h1>
+      <a href="#programs" class="bg-red-600 hover:bg-red-800 text-white font-bold py-3 px-6 rounded-full">Get Started</a>
+    </div>
+  </header>
 
-<body>
-  <h1>BQuickJJ</h1>
-  <p>Now Serving the Palmetto Area!</p>
+  <!-- Navigation -->
+  <nav class="bg-black fixed top-0 w-full z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-white text-2xl font-bold">FightClub</div>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#about" class="hover:text-red-600">About</a></li>
+        <li><a href="#programs" class="hover:text-red-600">Programs</a></li>
+        <li><a href="#schedule" class="hover:text-red-600">Schedule</a></li>
+        <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 text-center bg-gray-900">
+    <h2 class="text-4xl mb-6">About Us</h2>
+    <p class="max-w-3xl mx-auto">At FightClub, we build champions inside and outside the cage. Our team of professional trainers will guide you to meet your fitness and martial arts goals—whether you're a beginner or a pro fighter.</p>
+  </section>
 
-  <div class="maonrails-schedule" attr-gym="D0e7E" attr-schedule="all" attr-program="all"></div>
+  <!-- Programs Section -->
+  <section id="programs" class="py-20 px-6 bg-black">
+    <h2 class="text-4xl text-center mb-12">Our Programs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-xl text-center">
+        <img src="https://source.unsplash.com/400x300/?kickboxing" class="rounded mb-4" alt="Kickboxing">
+        <h3 class="text-2xl mb-2">Kickboxing</h3>
+        <p>Burn fat and build strength with our high-intensity kickboxing classes.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center">
+        <img src="https://source.unsplash.com/400x300/?jiu-jitsu" class="rounded mb-4" alt="Jiu-Jitsu">
+        <h3 class="text-2xl mb-2">Jiu-Jitsu</h3>
+        <p>Learn Brazilian Jiu-Jitsu from certified instructors and level up your grappling game.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center">
+        <img src="https://source.unsplash.com/400x300/?mma" class="rounded mb-4" alt="MMA">
+        <h3 class="text-2xl mb-2">MMA</h3>
+        <p>Train like a pro with mixed martial arts techniques and intense conditioning drills.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl mb-6">Get in Touch</h2>
+    <p class="mb-6">Ready to join the fight? Schedule a free class or ask us anything below.</p>
+    <form class="max-w-xl mx-auto space-y-4" onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded text-black" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded text-black" required>
+      <textarea placeholder="Your Message" class="w-full p-3 rounded text-black" rows="4"></textarea>
+      <button class="bg-red-600 hover:bg-red-800 text-white font-bold py-3 px-6 rounded-full">Send Message</button>
+    </form>
+  </section>
 
-  <!-- This loads your custom JS -->
-  <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center text-sm text-gray-400">
+    &copy; 2025 FightClub. All rights reserved.
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
