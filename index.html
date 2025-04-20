@@ -1,128 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palmetto JiuJitsu</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <style>
-    header img {
-      width: 100%;      /* Make image scale to 100% of its container */
-      max-width: 100%;  /* Prevent image from growing beyond container */
-      height: auto;     /* Keep the image's aspect ratio intact */
-    }
-  </style>
-</head>
-<body class="bg-black text-white">
-  <!-- Header / Hero -->
-  <header class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('medal1.jpg');">
-    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center">
-      <p>While the sport of JiuJitsu has skyrocketed, many schools have lost the combative self defense aspect that is the foundation of JiuJitsu. At BQuick Jiu Jitsu the focus is always to survive and dominate an altercation. As a combat Army veteran of the invading year of Iraq 2003-2004 this is highly important to Coach Quick. Competition does test one’s ability in a safe and controlled environment and creates many life long positive health habits and experiences though! Coach Brandon Quick is the co-owner of the American Grappling Federation which conducts 100+ U.S. and European JiuJitsu tournaments per year. He owned and taught at 5 MMA and Jiu Jitsu schools in Dallas Ft Worth, Texas before relocating to Florida in 2020. Brandon has 25 black belts and schools affiliated with him across the U.S., Belgium, Trinidad & Tobago and Portugal. 4 of those black belts went thru all of the kids ranks and adult ranks of jiujitsu with Mr Quick with 2 going on to fight MMA and the other 2 wrestled collegiately. 4 UFC veterans and 20+ pro MMA fighters are in the BQuick Jiu Jitsu Network! Take advantage of the opportunity to train in an elite program for all ages by the most experienced instructor in MMA the area!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palmetto JiuJitsu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <style>
 
-</h1>
-      
-    </div>
-  </header>
+	html {
+        scroll-behavior: smooth;
+      }
+      /* Optional: Smooth gradient mask using a pseudo-element for even better blend */
+      .fade-bottom::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to bottom, transparent, #3b82f6); /* Tailwind blue-500 */
+        z-index: 1;
+      }
+    </style>
+  </head>
 
-
-  <!-- Navigation -->
-<nav class="bg-black fixed top-0 w-full z-50 shadow-lg">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    
-    <!-- Logo -->
-    <div class="text-white text-2xl font-bold">Palmetto JiuJitsu</div>
-
-    <!-- Hamburger Button (visible on mobile only) -->
-    <button id="menu-toggle" class="text-white focus:outline-none md:hidden">
-      <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Nav Links -->
-    <ul id="menu" class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-white absolute md:static top-full left-0 w-full md:w-auto bg-black md:bg-transparent p-6 md:p-0">
-      <li><a href="index.html" class="block bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-center">Home</a></li>
-      <li><a href="about.html" class="block bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-center">About Us</a></li>
-      <li><a href="affiliates.html" class="block bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-center">Affiliates</a></li>
-      <li><a href="location.html" class="block bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full text-center">Location</a></li>
-    </ul>
-
-  </div>
-</nav>
-
-
-  <!-- Programs Section -->
-  <section id="programs" class="py-20 px-6 bg-black">
-    <h2 class="text-4xl text-center mb-12">Our Programs</h2>
-    <div class="bg-gray-800 p-6 rounded-xl text-center" style="background-image: url('image3.jpg'); background-size: cover; background-position: center;">
-  <h3 class="text-2xl mb-2">Youth JiuJitsu Program</h3>
-      <p>Mon-Thu</p>
-      <p>5:00 - 6:15pm</p>
-      <p>4-12 yrs old</p>
-      <p>$175 per month, unlimited training</p>
-      <p></p>
-      <p class="mt-8">A program like no other in the area! We have the longest classes for youth in all of Tampa and classes are taught by a 3rd degree Jiu Jitsu black belt, 
-        Army combat veteran and coach to UFC fighters, with 25+ years in the martial arts, Brandon Quick</p>
-
-    </div>
-    <div class="bg-gray-800 p-6 rounded-xl text-center mt-8" style="background-image: url('image3.jpg'); background-size: cover; background-position: center;">
-  <h3 class="text-2xl mb-2">Adult JiuJitsu Fundamentals Program</h3>
-  <p>13yrs and up, All Levels</p>
-  <p>#175 per month, unlimited training</p>
-  <p class="mt-8">The 1st 12 months of classes will be a Fundamentals Curriculum focusing on the basics of JiuJitsu, Wrestling and Self Defense. This is a 12 month cyclical program for beginners but all ranks are welcome to attend. 
-After attending 12 months of the Fundamentals, students will then be able to comprehend the basic movements of JiuJitsu, have a concept for dealing with an opponent throwing strikes and progress to more advanced classes. 
-</p>
-</div>
-    
-  </section>
-
-
-  <!-- Pricing Section -->
-  <section id="links" class="py-20 px-6 bg-black">
-    
-    <div class="bg-gray-800 p-6 rounded-xl text-center" style="background-image: url('image3.jpg'); background-size: cover; background-position: center;">
-    <h2 class="text-4xl text-center mb-12">pricing</h2>
-      
-      <div class="mt-8">
-      <p>$175 unlimited monthly membership</p>
-      <p>$50 off LEO, Military, 1st responders</p>
-      <p>$50 off additional family member ($125)</p>
-      <p>“pay for 3 and the rest are free” large family special! $175+ 125+ 125‎ = $425.00</p>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white border-b shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+        <h1 class="text-2xl font-bold">Palmetto Jiu Jitsu</h1>
+        <nav class="flex gap-4 mt-2 sm:mt-0">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+	  <a href="location.html" class="text-gray-700 hover:text-blue-600">Location</a>
+          <a href="affiliates.html" class="text-gray-700 hover:text-blue-600">Affiliates</a>
+        </nav>
       </div>
-    
-  </section>
+    </header>
 
-  <!-- gymdesk Section -->
-<script src="https://gymdesk.com/js/widgets.js"></script>
+    <!-- Main Content -->
+    <main class="mx-auto">
+      <!-- Intro Section with Image + Smooth Gradient -->
+      <section class="relative h-screen flex flex-col items-center justify-center text-white fade-bottom">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('pillars.jpg'); z-index: 0;"></div>
 
-<div style="max-width: 800px; margin: 0 auto;">
-  <div class="maonrails-schedule" attr-gym="D0e7E" attr-schedule="all" attr-program="all"></div>
-</div>
+        <!-- Optional long gradient for soft blend -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-blue-500 opacity-95 z-0"></div>
 
+        <!-- Foreground Content -->
+        <div class="relative z-10 text-center">
+          <h2 class="text-3xl font-semibold mb-4">Palmetto JiuJitsu</h2>
+          <a href="#schedule">
+	  <button id="clickMeBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow">
+	    Schedule an intro session!
+	  </button>
+	</a>
 
-  <!-- Footer -->
-  <footer class="bg-black py-6 text-center text-sm text-gray-400">
-    &copy; 2025 Palmetto JiuJitsu All rights reserved.
-  </footer>
+        </div>
+      </section>
 
-  <script src="scripts.js"></script>
-    <!-- Other content above -->
+      <!-- Gradient Info Section -->
+      <section class="bg-gradient-to-b from-blue-500 to-teal-500 text-white p-8">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+          <p class="text-white mb-4 text-center">
+            While the sport of JiuJitsu has skyrocketed, many schools have lost the combative self defense aspect that is the foundation of JiuJitsu. 
+            At BQuick Jiu Jitsu the focus is always to survive and dominate an altercation. 
+            As a combat Army veteran of the invading year of Iraq 2003-2004, this is highly important to Coach Quick. 
+            Competition does test one’s ability in a safe and controlled environment and creates many life long positive health habits and experiences though!
+	  </p>
+	  <p class="text-white mb-4 text-center py-8">
+            Coach Brandon Quick is the co-owner of the American Grappling Federation which conducts 100+ U.S. and European JiuJitsu tournaments per year. 
+            He owned and taught at 5 MMA and Jiu Jitsu schools in Dallas Ft Worth, Texas before relocating to Florida in 2020. 
+            Brandon has 25 black belts and schools affiliated with him across the U.S., Belgium, Trinidad & Tobago and Portugal. 4 of those black belts went thru all of the kids ranks 
+            and adult ranks of jiujitsu with Mr Quick with 2 going on to fight MMA and the other 2 wrestled collegiately. 
+            4 UFC veterans and 20+ pro MMA fighters are in the BQuick Jiu Jitsu Network! Take advantage of the opportunity to train in an elite program 
+            for all ages by the most experienced instructor in MMA the area!
+          </p>
+        </div>
+		
+		
+      </section>
+	  
+	  <section id="schedule">
+	  <div class="maonrails-schedule" attr-gym="D0e7E" attr-schedule="all" attr-program="all"></div>
+	  
+	  <script src="https://gymdesk.com/js/widgets.js"></script>
+	  
+	  </section>
+	  
+	  
+	  
+    </main>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
-
+    <!-- Footer -->
+    <footer class="bg-black border-t">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-gray-600 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <span>&copy; 2025 My Website</span>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+    </footer>
   </body>
 </html>
-
-  
-</body>
-</html>
-
