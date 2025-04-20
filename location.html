@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palmetto JiuJitsu Location</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Optional: Smooth gradient mask using a pseudo-element for even better blend */
+    .fade-bottom::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to bottom, transparent, #3b82f6); /* Tailwind blue-500 */
+      z-index: 1;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 450px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+<!-- Header (Fixed Navigation) -->
+<!-- Header -->
+    <header class="bg-white border-b shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+        <h1 class="text-2xl font-bold">Palmetto Jiu Jitsu</h1>
+        <nav class="flex gap-4 mt-2 sm:mt-0">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+	  <a href="location.html" class="text-gray-700 hover:text-blue-600">Location</a>
+          <a href="affiliates.html" class="text-gray-700 hover:text-blue-600">Affiliates</a>
+        </nav>
+      </div>
+    </header>
+
+<!-- Main Content Section -->
+<main class="mx-auto pt-24"> <!-- Adjust padding to prevent header overlap -->
+  <section class="px-4 py-12 max-w-4xl mx-auto">
+    <h1 class="text-3xl text-center font-bold mb-8">Our Location</h1>
+
+    <!-- Google Map iframe -->
+    <div class="relative">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319722.70764510153!2d-82.5704269576964!3d27.702734883609875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c323a76bd77539%3A0xeea12b03e369781c!2s6004%2077th%20St%20E%2C%20Palmetto%2C%20FL%2034221!5e0!3m2!1sen!2sus!4v1744898717350!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-black py-6 text-center text-sm text-gray-400">
+  &copy; 2025 Palmetto JiuJitsu. All rights reserved.
+</footer>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
