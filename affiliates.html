@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palmetto JiuJitsu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <style>
+
+	html {
+        scroll-behavior: smooth;
+      }
+      /* Optional: Smooth gradient mask using a pseudo-element for even better blend */
+      .fade-bottom::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to bottom, transparent, #3b82f6); /* Tailwind blue-500 */
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white border-b shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+        <h1 class="text-2xl font-bold">Palmetto Jiu Jitsu</h1>
+        <nav class="flex gap-4 mt-2 sm:mt-0">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+	  <a href="location.html" class="text-gray-700 hover:text-blue-600">Location</a>
+          <a href="affiliates.html" class="text-gray-700 hover:text-blue-600">Affiliates</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto">
+      <p>It's empty in here... coming soon!</p>
+	  
+	  
+	  
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-gray-600 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <span>&copy; 2025 My Website</span>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>
