@@ -1,94 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Palmetto JiuJitsu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Optional: Smooth gradient mask using a pseudo-element for even better blend */
-    .fade-bottom::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 150px;
-      background: linear-gradient(to bottom, transparent, #3b82f6); /* Tailwind blue-500 */
-      z-index: 1;
-    }
-  </style>
-</head>
-<body class="relative bg-gray-100 text-gray-900 font-sans" style="background-image: url('lizard_grappling1.webp'); z-index: 0;">
+<body class="relative bg-gray-100 text-gray-900 font-sans">
+  <!-- Full-screen background container -->
+  <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('lizard_grappling1.webp');"></div>
 
-<!-- Header (Fixed Navigation) -->
-<!-- Header -->
+  <!-- Main Content -->
+  <div class="relative z-10">
+    <!-- Header (Fixed Navigation) -->
     <header class="bg-black shadow-sm pb-2">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
-    <h1 class="text-2xl font-bold">
-      <a href="index.html" class="text-blue-600 hover:text-white">Palmetto JiuJitsu</a>
-    </h1>
-    <nav class="flex gap-4 mt-2 sm:mt-0">
-      <a href="index.html" class="text-blue-600 hover:text-blue-400">Home</a>
-      <a href="about.html" class="text-blue-600 hover:text-blue-400">About Us</a>
-      <a href="location.html" class="text-blue-600 hover:text-blue-400">Location</a>
-      <a href="affiliates.html" class="text-blue-600 hover:text-blue-400">Affiliates</a>
-    </nav>
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+        <h1 class="text-2xl font-bold">
+          <a href="index.html" class="text-blue-600 hover:text-white">Palmetto JiuJitsu</a>
+        </h1>
+        <nav class="flex gap-4 mt-2 sm:mt-0">
+          <a href="index.html" class="text-blue-600 hover:text-blue-400">Home</a>
+          <a href="about.html" class="text-blue-600 hover:text-blue-400">About Us</a>
+          <a href="programs.html" class="text-blue-600 hover:text-blue-400">Our Programs</a>
+          <a href="location.html" class="text-blue-600 hover:text-blue-400">Location</a>
+          <a href="affiliates.html" class="text-blue-600 hover:text-blue-400">Affiliates</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="mx-auto">
+      <section class="mx-auto bg-gradient-to-r from-blue-500 to-teal-500 text-white pb-6">
+        <h1 class="text-4xl mb-6 text-center">Professor Quick</h1>
+        <p class="text-center">Brandon has instructional apps and videos on BJJFanatics</p>
+
+        <div class="text-center mt-4">
+          <a href="https://bjjfanatics.com/collections/brandon-quick/products/advanced-half-guard-tilt-sweep-by-brandon-quick?variant=39633247797346" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="text-black hover:text-blue-200 underline">
+            Advanced Half Guard
+          </a>
+        </div>
+
+        <p class="text-center mt-4">Budovideos</p>
+        <div class="text-center mt-4">
+          <a href="https://budovideos.com/products/fade-to-black-2-series-with-brandon-quick-on-demand" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="text-black hover:text-blue-200 underline">
+            Fade to Black 2
+          </a>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://budovideos.com/products/fade-to-black-1-series-with-brandon-quick-on-demand" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="text-black hover:text-blue-200 underline">
+            Fade to Black 1
+          </a>
+        </div>
+
+        <p class="text-center mt-4">and over a million watch hours on his 
+          <a href="https://www.youtube.com/@BrandonQuick" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="text-black hover:text-blue-200 underline">
+            YouTube Channel
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center text-sm text-gray-400 pb-6">
+      &copy; 2025 Palmetto JiuJitsu All rights reserved.
+    </footer>
   </div>
-</header>
-
-<!-- Main Content Section -->
-<main class="mx-auto"> <!-- Adjust padding to prevent header overlap -->
-  <section class="mx-auto bg-gradient-to-r from-blue-500 to-teal-500 text-white pb-6">
-    <h1 class="text-4xl mb-6 text-center">Professor Quick</h1>
-    <p class="text-center">Brandon has instructional apps and videos on BJJFanatics</p>
-
-    <div class="text-center mt-4">
-      <a href="https://bjjfanatics.com/collections/brandon-quick/products/advanced-half-guard-tilt-sweep-by-brandon-quick?variant=39633247797346" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         class="text-black hover:text-blue-200 underline">
-        Advanced Half Guard
-      </a>
-    </div>
-
-    <p class="text-center mt-4">Budovideos</p>
-    <div class="text-center mt-4">
-      <a href="https://budovideos.com/products/fade-to-black-2-series-with-brandon-quick-on-demand" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         class="text-black hover:text-blue-200 underline">
-        Fade to Black 2
-      </a>
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="https://budovideos.com/products/fade-to-black-1-series-with-brandon-quick-on-demand" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         class="text-black hover:text-blue-200 underline">
-        Fade to Black 1
-      </a>
-    </div>
-
-    <p class="text-center mt-4">and over a million watch hours on his 
-      <a href="https://www.youtube.com/@BrandonQuick" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         class="text-black hover:text-blue-200 underline">
-        YouTube Channel
-      </a>
-    </p>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer class="bg-black text-center text-sm text-gray-400 pb-6">
-  &copy; 2025 Palmetto JiuJitsu All rights reserved.
-</footer>
-
 </body>
-</html>
